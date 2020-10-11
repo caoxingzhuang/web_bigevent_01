@@ -34,7 +34,8 @@ $(function () {
             .cropper('destroy')      // 销毁旧的裁剪区域
             .attr('src', newImgURL)  // 重新设置图片路径
             .cropper(options)        // 重新初始化裁剪区域
-    })
+
+    });
 
     // 头像上传
     $('#btnUpload').on('click', function () {
@@ -59,6 +60,8 @@ $(function () {
             }
         })
     })
+
+
     getUserInfo();
     function getUserInfo() {
         $.ajax({
